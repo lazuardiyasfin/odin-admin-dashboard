@@ -19,7 +19,8 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 177px 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #e2e8f0;
 }
 
 nav {
@@ -29,10 +30,6 @@ nav {
 
 header {
     background-color: #ffffff;
-}
-
-main {
-    background-color: #e2e8f0;
 }
 
 /* SIDEBAR */
@@ -73,4 +70,110 @@ nav ul li a {
 
 .main-nav {
     margin-bottom: 50px;
+}
+
+/* HEADER */
+
+header {
+    padding: 15px 50px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.profile-pic-wrapper {
+    background-color: black;
+}
+
+/* Upper Header */
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    background-color: #e2e8f0;
+    height: 30px;
+    width: 90%;
+    max-width: 650px;
+    margin-left: 30px;
+    border: 0px;
+    border-radius: 25px;
+    text-indent: 1ch;
+}
+
+.uh-right-section {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+    gap: 35px;
+}
+
+.profile {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.upper-header .profile-pic-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Lower Header */
+
+.lower-header {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+} 
+
+.lh-left-section {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.lh-right-section {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    gap: 0px 25px;
+}
+
+.lh-right-section button {
+    width: 100px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 40px;
+    background-color: #1992d4;
+    color: white;    
+    font-weight: 600;
+    text-align: center;
+}
+
+.lower-header .profile-pic-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.greeting-text {
+    font-weight: 700;
+    line-height: 1px;
+    font-size: 0.8rem;
+}
+
+.greeting-text :last-child {
+    font-size: 1.35rem;
 }
