@@ -168,9 +168,13 @@ header {
     border-radius: 50%;
 }
 
+.greeting-text span {
+    display: block;
+}
+
 .greeting-text {
     font-weight: 700;
-    line-height: 1px;
+    line-height: 1.5;
     font-size: 0.8rem;
 }
 
