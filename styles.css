@@ -13,6 +13,10 @@ a, a:visited {
     color: inherit;
 }
 
+button {
+    padding: 0;
+}
+
 /* LAYOUT */
 
 body {
@@ -153,7 +157,6 @@ header {
 .lh-right-section button {
     width: 100px;
     height: 40px;
-    padding: 0px;
     border: 0px;
     border-radius: 40px;
     background-color: #1992d4;
@@ -180,4 +183,136 @@ header {
 
 .greeting-text :last-child {
     font-size: 1.35rem;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.announcements-list, 
+.trendings-list {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.announcements {
+    margin-bottom: 10px;
+}
+
+.project-card, .announcements-list, .trendings-list {
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    height: 220px;
+    border-radius: 10px;
+    border-left: 10px solid #f0b429;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    align-content: space-between;
+}
+
+.project-card h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-card p {
+    color: #676767;
+    margin: 0;
+}
+
+.project-actions {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    justify-content: end;
+    align-items: center;
+    padding: 0px;
+}
+
+.project-actions button {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+}
+
+/* Announcements */
+
+.announcements-list {
+    padding: 10px 25px;
+}
+
+.announcements-list li {
+    border-bottom: 2px solid #d2d2d2;
+    padding: 20px 5px;
+}
+
+.announcements-list :last-child {
+    border-bottom: none;
+}
+
+.announcements-list li a h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.announcements-list li a p {
+    font-size: 0.75rem;
+    color: #676767;
+    margin: 0;
+}
+
+/* Trendings */
+
+.trendings-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-items: start;
+}
+
+.trendings-list li a {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.trendings-list li a span {
+    display: block;
+}
+
+.trendings-list li a .profile-pic-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   
 }
