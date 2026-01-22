@@ -19,6 +19,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    filter: brightness(90%);
 }
 
 /* LAYOUT */
@@ -131,6 +132,9 @@ header {
 
 .uh-right-section button {
     background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     border: none;
 }
 
@@ -282,8 +286,9 @@ main h2 {
 }
 
 .project-actions button {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background-color: white;
     border: none;
 }
