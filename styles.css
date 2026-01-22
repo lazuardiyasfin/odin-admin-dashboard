@@ -138,7 +138,7 @@ header {
     border: none;
 }
 
-.profile {
+.profile a {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -147,7 +147,7 @@ header {
     font-weight: 700;
 }
 
-.profile span {
+.profile a span {
     white-space: nowrap;
 }
 
